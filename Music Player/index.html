@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+                <div class="circle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+            <img src="Girl.png" class="song-img">
+            <h1>Who Says</h1>
+            <p>Selena Gomez</p>
+
+            <audio id="song">
+                <source src="Who Says.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class='bx bxs-chevrons-left'></i></div>
+                <div onclick="playPause()"><i class='bx bx-play' id="ctrlIcon"></i></div>
+                <div><i class='bx bxs-chevrons-right'></i></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
